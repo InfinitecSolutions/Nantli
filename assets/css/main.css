@@ -1364,7 +1364,7 @@ section,
 }
 
 .gallery .gallery-item:hover img {
-  transform: scale(1);
+  transform: scale(1.1);
 }
 
 /*--------------------------------------------------------------
@@ -1662,10 +1662,137 @@ section,
 .contact .php-email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color) 90%, black 15%);
 }
+<!-- Estilos CSS para los botones -->
+<style>
+  .social-buttons {
+    display: flex;
+    flex-direction: column; /* Columna por defecto */
+    align-items: center;
+    justify-content: center;
+    gap: 40px; /* Espaciado entre botones */
+    padding: 40px;
+  }
 
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
+  @media (min-width: 768px) {
+    .social-buttons {
+      flex-direction: row; /* Cambia a una fila en pantallas más grandes */
+    }
+  }
+
+  .btn-social {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px; /* Ajuste uniforme en el padding */
+    margin: 5px; /* Margen uniforme */
+    font-size: 16px;
+    color: #fff;
+    border-radius: 10px; /* Consistencia en el borde redondeado */
+    text-decoration: none;
+    transition: background-color 0.3s ease, opacity 0.3s ease; /* Añadido de transición para opacidad */
+    width: 100%; /* Permite que los botones ocupen todo el ancho disponible en la columna */
+    max-width: 200px; /* Limitar el ancho máximo en pantallas grandes */
+  }
+
+  .btn-social i {
+    margin-right: 8px; /* Espaciado entre icono y texto */
+    font-size: 18px; /* Consistencia en el tamaño del icono */
+  }
+
+  /* Colores de fondo para cada red social */
+  .facebook {
+    background-color: #3b5998;
+  }
+
+  .facebook:hover {
+    background-color: #2d4373;
+  }
+
+  .location {
+    background-color: #ff5722;
+  }
+
+  .location:hover {
+    background-color: #e64a19;
+  }
+
+  .whatsapp {
+    background-color: #25d366;
+  }
+
+  .whatsapp:hover {
+    background-color: #20b955;
+  }
+
+  .instagram {
+    background-color: #E4405F; /* Color de Instagram */
+  }
+
+  .instagram:hover {
+    background-color: #C13584; /* Color de hover de Instagram */
+  }
+
+  .tiktok {
+    background-color: #010101; /* Color de TikTok */
+  }
+
+  .tiktok:hover {
+    background-color: #333; /* Color de hover de TikTok */
+  }
+
+  /* Efecto de opacidad al pasar el ratón sobre todos los botones */
+  .btn-social:hover {
+    opacity: 0.8;
+  }
+  <!-- Estilos CSS para el carrusel -->
+  <style>
+    /* Estilo general del contenedor del carrusel */
+    #carouselExampleControls {
+      position: relative;
+      max-width: 900px; /* Ajustar el ancho máximo del carrusel */
+      margin: auto; /* Centrar el carrusel */
+      border-radius: 10px; /* Bordes redondeados */
+      overflow: hidden; /* Para que las imágenes no sobresalgan del contenedor */
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    }
+  
+    /* Ajuste de las imágenes del carrusel */
+    .carousel-item img {
+      object-fit: cover; /* Cubrir el área sin distorsionar */
+      height: 400px; /* Altura fija para el carrusel */
+    }
+  
+    /* Personalización de los botones de navegación */
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+      border-radius: 50%; /* Botones redondeados */
+      padding: 10px; /* Espaciado alrededor del ícono */
+    }
+  
+    /* Ajuste de los botones de navegación al pasar el ratón */
+    .carousel-control-prev-icon:hover,
+    .carousel-control-next-icon:hover {
+      background-color: rgba(0, 0, 0, 0.8); /* Más oscuro al hacer hover */
+      transition: background-color 0.3s ease; /* Transición suave */
+    }
+  
+    /* Posición de los botones de navegación */
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 5%; /* Hacer que los botones no ocupen mucho espacio */
+    }
+  
+    /* Indicadores del carrusel */
+    .carousel-indicators [data-bs-target] {
+      background-color: #fff; /* Blanco para los indicadores */
+      width: 10px;
+      height: 10px;
+      border-radius: 50%; /* Indicadores redondos */
+    }
+  
+    .carousel-indicators [data-bs-target].active {
+      background-color: #000; /* Negro para el indicador activo */
+    }
+  </style>
+  
